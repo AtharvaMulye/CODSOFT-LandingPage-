@@ -3,6 +3,7 @@ import React, { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import Container from "@/components/container";
 import { Button } from "./ui/button";
+import Link from "next/link";
 const Hero: FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -33,7 +34,9 @@ const Hero: FC = () => {
               coding brilliance starts here – open-source and ready for your
               coding adventure! 🌐✨&quot;
             </p>
+            <Link href={"https://compil.vercel.app"}>
             <Button variant={"ghost"} className="flex bg-blue-400 hover:bg-blue-200 justify-center items-center w-full text-lg font-semibold">Visit COMPIL!</Button>
+            </Link>
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2 mt-[-3.6rem] dark:mix-blend-lighten" >
